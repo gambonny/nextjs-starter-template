@@ -1,5 +1,5 @@
 {
-  "name": "t-app",
+  "name": "powder",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -31,8 +31,8 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write --ignore-path .gitignore .",
-      "npx eslint --fix"
+      "npx eslint --fix",
+      "npx prettier --write --ignore-unknown"
     ]
   }
 }
