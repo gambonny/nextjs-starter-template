@@ -8,6 +8,7 @@ specifiers:
   eslint-config-next: 13.0.5
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
+  husky: ^8.0.0
   next: 13.0.5
   prettier: ^2.8.0
   react: 18.2.0
@@ -27,6 +28,7 @@ devDependencies:
   eslint-config-next: 13.0.5_hsf322ms6xhhd4b5ne6lb74y4a
   eslint-config-prettier: 8.5.0_eslint@8.28.0
   eslint-plugin-prettier: 4.2.1_cwlo2dingkvfydnaculr42urve
+  husky: 8.0.2
   prettier: 2.8.0
   typescript: 4.9.3
 
@@ -1610,6 +1612,15 @@ packages:
     engines: { node: '>= 0.4.0' }
     dependencies:
       function-bind: 1.1.1
+    dev: true
+
+  /husky/8.0.2:
+    resolution:
+      {
+        integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==
+      }
+    engines: { node: '>=14' }
+    hasBin: true
     dev: true
 
   /ignore/5.2.0:
