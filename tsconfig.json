@@ -20,8 +20,8 @@
       }
     ],
     "paths": {
-      "@db/*": ["server/db/*"],
-      "@src/*": ["src/*"]
+      "@db/*": ["./server/db/*"],
+      "@src/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
