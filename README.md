@@ -1,3 +1,10 @@
 ### Path aliases
     @db  => server/db/*
-    @src => src/*
+   
+### Tests
+    pnpm run jest
+    pnpm run cypress:open
+    
+### Husky
+    before every commit run: linter and prettier
+    before every push run: jest and cypress
