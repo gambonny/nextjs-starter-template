@@ -2,10 +2,12 @@
 
 exports[`page renders the main page 1`] = `
 <div>
-  <h1
-    class="font-bold text-6xl text-center"
-  >
-    Hello world
-  </h1>
+  <main>
+    <h1
+      class="font-bold text-6xl text-center"
+    >
+      Hello world
+    </h1>
+  </main>
 </div>
 `;
