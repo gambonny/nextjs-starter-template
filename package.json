@@ -11,7 +11,9 @@
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "prepare": "husky install",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@prisma/client": "^4.6.1",
@@ -28,6 +30,9 @@
     "@types/react-dom": "18.0.9",
     "@types/testing-library__jest-dom": "^5.14.5",
     "autoprefixer": "^10.4.7",
+    "axe-core": "^4.5.2",
+    "cypress": "^11.2.0",
+    "cypress-axe": "^1.1.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "eslint-config-prettier": "^8.5.0",
