@@ -20,6 +20,7 @@ specifiers:
   husky: ^8.0.0
   jest: ^29.3.1
   jest-environment-jsdom: ^29.3.1
+  jest-it-up: ^2.0.2
   lint-staged: ^13.0.4
   next: 13.0.5
   postcss: ^8.4.14
@@ -56,6 +57,7 @@ devDependencies:
   husky: 8.0.2
   jest: 29.3.1_@types+node@18.11.9
   jest-environment-jsdom: 29.3.1
+  jest-it-up: 2.0.2
   lint-staged: 13.0.4
   postcss: 8.4.14
   prettier: 2.8.0
@@ -499,6 +501,35 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@inquirer/confirm/0.0.14-alpha.0:
+    resolution: {integrity: sha512-MTMCp/jUHJUB0IVkV5utQ1NUE3tqH2W0OtYXByW+ykoRXLiaYrv8vYtx6j0/rOiDHhNjNqTEIWomQx16w1x0uQ==}
+    dependencies:
+      '@inquirer/core': 0.0.15-alpha.0
+      '@inquirer/input': 0.0.15-alpha.0
+      chalk: 4.1.2
+    dev: true
+
+  /@inquirer/core/0.0.15-alpha.0:
+    resolution: {integrity: sha512-aytWU6/yM9HkZ09BrgfTJlVsZjmxoiO1cBL5tlkO/jYe4ZuU84rHWnFFxorRzkmT6gkTs1L9TUKaeK3tbyJmJw==}
+    dependencies:
+      ansi-escapes: 4.3.2
+      chalk: 4.1.2
+      cli-spinners: 2.7.0
+      cli-width: 3.0.0
+      lodash: 4.17.21
+      mute-stream: 0.0.8
+      run-async: 2.4.1
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+    dev: true
+
+  /@inquirer/input/0.0.15-alpha.0:
+    resolution: {integrity: sha512-h3mxEK9xTtdAX6a+S/pYRVRTxpnjOPQgQADpgFar/yQqklyBRM5+uX1YRRQG+uwU0IzpI18viPnEdibxrY7Kyw==}
+    dependencies:
+      '@inquirer/core': 0.0.15-alpha.0
+      chalk: 4.1.2
     dev: true
 
   /@istanbuljs/load-nyc-config/1.1.0:
@@ -1767,6 +1798,11 @@ packages:
       restore-cursor: 3.1.0
     dev: true
 
+  /cli-spinners/2.7.0:
+    resolution: {integrity: sha512-qu3pN8Y3qHNgE2AFweciB1IfMnmZ/fsNTEE+NOFjmGB2F/7rLhnhzppvpCnN4FovtP26k8lHyy9ptEbNwWFLzw==}
+    engines: {node: '>=6'}
+    dev: true
+
   /cli-table3/0.6.3:
     resolution: {integrity: sha512-w5Jac5SykAeZJKntOxJCrm63Eg5/4dhMWIcuTbo9rpE+brgaSZo0RuNJZeOyMgsUdhDeojvgyQLmjI+K50ZGyg==}
     engines: {node: 10.* || >= 12.*}
@@ -1790,6 +1826,11 @@ packages:
     dependencies:
       slice-ansi: 5.0.0
       string-width: 5.1.2
+    dev: true
+
+  /cli-width/3.0.0:
+    resolution: {integrity: sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==}
+    engines: {node: '>= 10'}
     dev: true
 
   /client-only/0.0.1:
@@ -3696,6 +3737,16 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /jest-it-up/2.0.2:
+    resolution: {integrity: sha512-xup3Lv1uc+ihGwyFLjZOqY2L7m91TyBp/TRJxS7PYAVQc/vd3NbkPyypUlT59sQDfW9uULF9jLCedr7jABDNnA==}
+    engines: {node: '>=12'}
+    hasBin: true
+    dependencies:
+      '@inquirer/confirm': 0.0.14-alpha.0
+      ansi-colors: 4.1.3
+      commander: 9.4.1
+    dev: true
+
   /jest-leak-detector/29.3.1:
     resolution: {integrity: sha512-3DA/VVXj4zFOPagGkuqHnSQf1GZBmmlagpguxEERO6Pla2g84Q1MaVIB3YMxgUaFIaYag8ZnTyQgiZ35YEqAQA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -4322,6 +4373,10 @@ packages:
 
   /ms/2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+    dev: true
+
+  /mute-stream/0.0.8:
+    resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
     dev: true
 
   /nanoid/3.3.4:
@@ -5001,6 +5056,11 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /run-async/2.4.1:
+    resolution: {integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==}
+    engines: {node: '>=0.12.0'}
     dev: true
 
   /run-parallel/1.2.0:
